@@ -57,7 +57,30 @@ body {
     list-style: none;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid tomato;
+
+}
+
+.header {
+    background-color: var(--body-bg-color);
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 .logo {
+    display: inline-block;
+    margin-top: 24px;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -67,6 +90,7 @@ body {
 }
 
 .header-span {
+    display: inline-block;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -106,12 +130,17 @@ body {
 .header-telmail:focus {
     color: var(--accent-color);
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .button {
     background: #2F303A;
 }
 
 .button-title {
+    margin-bottom: 40px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -152,7 +181,12 @@ body {
     overflow: hidden;
 }
 
+.feature {
+    background-color: #e5e5e5;
+}
+
 .feature-subject {
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -168,6 +202,7 @@ body {
 }
 
 .work-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -176,11 +211,16 @@ body {
     color: var(--subject-title-color);
 }
 
+.work-img {
+    display: block;
+}
+
 .team {
     background: #F5F4FA;
 }
 
 .team-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -190,10 +230,22 @@ body {
 }
 
 .team-item {
-    background: #ffffff;
+    background: #FFFFFF;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid #EEEEEE;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-img {
+    display: block;
 }
 
 .team-subject {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -203,6 +255,7 @@ body {
 }
 
 .team-text {
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -213,6 +266,11 @@ body {
 .portfolio-btn,
 .btn {
     cursor: pointer;
+}
+
+.buttons {
+    background-color: var(--body-bg-color);
+    margin-bottom: 34px;
 }
 
 .portfolio-btn {
@@ -237,7 +295,16 @@ body {
     color: #ffffff;
 }
 
+.portfolio-item-img {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
 .portfolio-heading {
+    margin-top: 20px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
@@ -246,6 +313,7 @@ body {
 }
 
 .portfolio-text {
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -253,7 +321,20 @@ body {
 }
 
 .footer {
+    border: 1px solid #EEEEEE;
     background: #2F303A;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 .footer-span {
@@ -265,14 +346,6 @@ body {
     color: var(--accent-color);
 }
 
-.footer-logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
 
 .footer-address .footer-link {
     font-weight: 400;
