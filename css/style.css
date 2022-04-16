@@ -69,6 +69,8 @@ body {
 
 .header {
     background-color: var(--body-bg-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 h1, h2, h3, p, ul {
@@ -80,7 +82,6 @@ h1, h2, h3, p, ul {
 
 .logo {
     display: inline-block;
-    margin-top: 24px;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -137,10 +138,11 @@ h1, h2, h3, p, ul {
 
 .button {
     background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .button-title {
-    margin-bottom: 40px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -148,18 +150,29 @@ h1, h2, h3, p, ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin: auto auto 30px auto;
+    max-width: 696px;
 }
 
 .btn {
+    margin-right: auto;
+    margin-left: auto;
+    border: 0px;
+    padding: 10px 30px 10px 30px;
+    height: 50px;
+    width: 200px;
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: #ffffff;    
 }
 
 .btn:hover,
@@ -263,6 +276,10 @@ h1, h2, h3, p, ul {
     color: var(--text-p-color);
 }
 
+.line {
+    border: 1px solid #ECECEC;
+}
+
 .portfolio-btn,
 .btn {
     cursor: pointer;
@@ -282,11 +299,6 @@ h1, h2, h3, p, ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--portfolio-text-btn-color);
-}
-
-.portfolio-btn.accent {
-    background-color: var(--accent-color);
-    color: #ffffff;
 }
 
 .portfolio-btn:hover,
@@ -359,6 +371,10 @@ h1, h2, h3, p, ul {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.address {
+    padding-bottom: 60px;
 }
 
 .footer-link:hover,
