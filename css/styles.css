@@ -1,12 +1,16 @@
 /* start */
 
 /* --hero-title-color: #ffffff; = колір Н1 тексту
+   --hero-background-color: #2E2F42 =колір фону hero
    --h2-title-color: #2e2f42; = колір Н2 тексту
    --h3-title-color: #2e2f42; = колір Н3 тексту
    --p-text-color: #434455; = колір тексту
    --header-link-color: #2e2f42; = колір навігації header
    --header-address-color: #434455; = колір тексту контактів
-   --hover-focus-color: #404BBF; = колір hover,focus   
+   --hover-focus-color: #404BBF; = колір hover,focus
+   --header-background-color: #E7E9FC = колір фону header
+   --background-color-team: #f4f4fd; = колір фону команди
+   --background-color: #ffffff; = колір фону
    */
  
   :root{
@@ -17,12 +21,20 @@
    --header-link-color: #2e2f42;
    --header-address-color: #434455;
    --hover-focus-color: #404BBF;
+   --header-background-color: #E7E9FC;
+   --hero-background-color: #2E2F42;
+   --background-color-team: #f4f4fd;
+   --background-color: #ffffff;
   }
 
 body {
     font-family: 'Roboto', sans-serif;   
 }
 
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
 
 /* верхня навігація ------ header--------- */
 .header-logo,
@@ -43,8 +55,27 @@ body {
     list-style: none;
 }
 
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid red;
+}
+
+img {
+    display: block;
+}
+
+.header{
+    background-color: var(--background-color);
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .header-logo {
-font-family: 'Raleway';
+    display: inline-block;
+    margin-left: 156px;
+    font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -101,15 +132,19 @@ font-family: 'Raleway';
 
 /* ---------------- section hero -------------- */
 .hero {
-    background-color: #2E2F42;
+    background-color: var(--hero-background-color);
+    padding: 188px 0;
 }
 
 .hero-title {
+        
         font-size: 56px;
         line-height: 1.07;
         text-align: center;
         letter-spacing: 0.02em;    
         color: var(--hero-title-color);
+        margin: auto auto 48px auto;      
+        max-width: 496px;
 }
 
 .hero-btn {
@@ -128,7 +163,12 @@ font-family: 'Raleway';
 
           /*------------feature---особливість--------------> */
 
-.visually-hidden {
+.feature {
+    background-color: #ffffff;
+    padding: 120px 0;
+}
+
+          .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -148,6 +188,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--h3-title-color);
+padding-bottom: 8px;
 }
 .feature-text {
 font-size: 16px;
@@ -158,16 +199,27 @@ color: var(--p-text-color);
 
 /* ---------------work---------------- */
 
+.work{
+    background-color: #FFFFFF;
+    padding-bottom: 120px;
+}
+
 .work-title {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--h2-title-color);       
+    color: var(--h2-title-color);
+    margin-bottom: 72px;       
 }
 
 /* -------------team--------------- */
+
+.team{
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
 
 .team-title {
 font-size: 36px;
@@ -176,6 +228,7 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--h2-title-color);
+margin-bottom: 72px;
 }
 
 .team-subject{
@@ -185,6 +238,7 @@ line-height: 1.2;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--h3-title-color);
+margin-bottom: 8px;
 }
 
 .team-text{
@@ -193,9 +247,19 @@ line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--p-text-color);
+margin-bottom: 32px;
 }
 
 /* ----------fiiter---portfolio---- */
+
+.filter{
+   padding-top: 96px;
+   padding-bottom: 120px;
+}
+
+.filter-list{
+    margin-bottom: 72px;
+}
 
 .filter-btn,
 .hero-btn {
@@ -227,6 +291,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2E2F42;
+margin-bottom: 8px;
 }
 
 .portfolio-text{
@@ -234,12 +299,14 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--p-text-color);
+margin-bottom: 32px;
 }
 
 /* ---------footer------------ */
 
 .footer {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 
 .footer-logo{
