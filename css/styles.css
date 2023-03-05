@@ -249,7 +249,7 @@ color: var(--p-text-color);
 
 .work{
     background-color: #FFFFFF;
-    padding: 120px 0;
+    padding: 0 0 120px 0;
 }
 
 .work-list {
@@ -310,6 +310,10 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--h2-title-color);
 margin-bottom: 72px;
+} 
+
+.team-item {
+    padding-bottom: 24px;
 }
 
 .team-subject{
@@ -325,7 +329,6 @@ margin-bottom: 72px;
 }
 
 .team-text{
-    margin-bottom: 32px;
     
     font-size: 16px;
     line-height: 1.5;
@@ -400,7 +403,7 @@ margin-bottom: 72px;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
-    padding: 32px 0;
+    padding: 32px 0 32px 16px;
 }
 
 .portfolio-subject{
